@@ -1,0 +1,94 @@
+.overview_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    img {
+        max-width: 100%;
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        @media (max-width: 990px) {
+            height: 300px;
+        }
+    }
+    .overviev_box {
+        background: #fff;
+        padding: 50px 60px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        @media (max-width: 990px) {
+            padding: 40px 20px;
+        }
+        a {
+            margin-top: 30px;
+            padding: 15px 20px;
+            color: #000;
+            text-decoration: none;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            text-align: center;
+            background: transparent;
+            border: 2px solid #000;
+            color: #000;
+            font: 500 1rem 'Roboto', sans-serif;
+            @media (max-width: 576px) {
+                min-width: 100%;
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.overview_bottom_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width: 1280px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    img {
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .overviev_box {
+        background: #fff;
+        padding: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        @media (max-width: 990px) {
+            padding: 40px 20px;
+        }
+        a {
+            margin-top: 30px;
+            padding: 15px 20px;
+            color: #000;
+            text-decoration: none;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            text-align: center;
+            background: transparent;
+            border: 2px solid #000;
+            color: #000;
+            font: 500 1rem 'Roboto', sans-serif;
+            @media (max-width: 576px) {
+                min-width: 100%;
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    }
+    .orange {
+        background: #FEBC35;
+    }
+}

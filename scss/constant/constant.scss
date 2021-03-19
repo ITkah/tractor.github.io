@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+button {
+    outline: none;
+}
+
+.padding {
+    padding: 0 70px;
+    @media (max-width: 1280px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 990px) {
+        padding: 0 20px;
+    }
+}
+
+.padding_mob {
+    padding: 0 70px;
+    @media (max-width: 1280px) {
+        padding: 0 45px;
+    }
+    @media (max-width: 990px) {
+        padding: 0 15px;
+    }
+    @media (max-width: 576px) {
+        padding: 0;
+    }
+}
+
+.margin {
+    margin-bottom: 80px;
+    @media (max-width: 990px) {
+        margin-bottom: 60px;
+    }
+}
+
+main {
+    min-height: calc(100vh - 80px);
+}
+
+a {
+    outline: none;
+}
+
+.simple_sub_title {
+    color: #999999;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font: 600 1rem 'Roboto', sans-serif;
+    border-bottom: 3px solid #FEBC35;
+    display: inline-block;
+    padding-top: 3px;
+}
+
+.simple_title {
+    font: 600 2.5rem 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    @media (max-width: 990px) {
+        font: 600 1.5rem 'Roboto', sans-serif;
+    }
+}
+
+.simple_text {
+    opacity: .6;
+    margin-bottom: 15px;
+    font: 400 1rem/23px 'Roboto', sans-serif;
+    @media (max-width: 990px) {
+        font: 400 .95rem/21px 'Roboto', sans-serif;
+    }
+}
+
+.simple_btn {
+    display: flex;
+    a {
+        min-width: 70px;
+        padding: 15px 20px;
+        color: #000;
+        text-decoration: none;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        text-align: center;
+        background: #FEBC35;
+        border: 2px solid #FEBC35;
+        font: 500 1rem 'Roboto', sans-serif;
+        @media (max-width: 576px) {
+            min-width: 100%;
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+}

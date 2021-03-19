@@ -1,0 +1,80 @@
+    .investor {
+        margin-top: 100px;
+        @media (max-width: 990px) {
+            margin-top: 30px;
+        }
+    }
+    
+    .investor_wrap {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 20px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        .investor_title {
+            border-bottom: 2px solid #FEBC35;
+            display: inline-block;
+            margin-bottom: 30px;
+            font: 600 1.5rem 'Roboto', sans-serif;
+            @media (max-width: 990px) {
+                margin-bottom: 20px;
+            }
+        }
+        .investor_sub_text {
+            text-align: center;
+            font: 600 1rem 'Roboto', sans-serif;
+            z-index: 9;
+            position: relative;
+        }
+        .investor_form_box {
+            background: #FEBC35;
+            padding: 35px 20px;
+            position: relative;
+            overflow: hidden;
+            .icon {
+                position: absolute;
+                right: -30px;
+                bottom: -30px;
+            }
+            .investor_title_form {
+                font: 600 2rem 'Roboto', sans-serif;
+                margin-bottom: 15px;
+            }
+            .investor_text {
+                margin-bottom: 35px;
+                font: 400 1rem 'Roboto', sans-serif;
+            }
+            .investor_form {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                margin-bottom: 90px;
+                input {
+                    border: none;
+                    padding: 10px;
+                    color: #222;
+                    outline: none;
+                    appearance: none;
+                    font: 400 .95rem 'Roboto', sans-serif;
+                }
+                button {
+                    padding: 12px 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    box-sizing: border-box;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    appearance: none;
+                    outline: none;
+                    text-align: center;
+                    border: none;
+                    background: #222;
+                    font: 500 1rem 'Roboto', sans-serif;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
